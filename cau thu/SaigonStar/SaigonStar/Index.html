@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trang quản trị</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+
+    <link href="Assest/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Assest/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="Assest/dist/css/skins/_all-skins.min.css">
+
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini" ng-app="tedushop">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <div href="Assest/picture/player.jpg" class="logo" >
+
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-lg"><image src="Assest/picture/player.jpg"class="img-circle" width="40px"/><b> Saigon</b>Star</span>
+
+            </div>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                     
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 messages</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- start message -->
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="/Asserts/admin/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                                </div>
+                                                <h4>
+                                                    Support Team
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+                                        <!-- end message -->
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">See All Messages</a></li>
+                            </ul>
+                        </li>
+                        <!-- Notifications: style can be found in dropdown.less -->
+
+                        <!-- Tasks: style can be found in dropdown.less -->
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-flag-o"></i>
+                                <span class="label label-danger">9</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 9 tasks</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Design some buttons
+                                                    <small class="pull-right">20%</small>
+                                                </h3>
+                                                <div class="progress xs">
+                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end task item -->
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <image src="Assest/picture/luongxuantruong.jpg" width= "30px"  class="img-circle" alt="User Image"/>
+                                <span class="hidden-xs">Lương Xuân Trường</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <image src="Assest/picture/luongxuantruong.jpg" class="img-circle" alt="User Image"/>
+                                    <p>
+                                        Lương Xuân Trường
+                                        <small>Member since Nov. 2012</small>
+                                    </p>
+                                </li>
+
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="row">
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Followers</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Sales</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Friends</a>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- =============================================== -->
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <image src="Assest/picture/luongxuantruong.jpg" width= "10px" class="img-circle"/>
+                    </div>
+                    <div class="pull-left info">
+                        <p>Lương Xuân Trường</p>
+                    </div>
+                </div>
+
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="treeview">
+                        <a href="Index.html">
+                            <i class="fa fa-home" aria-hidden="true"> Thông báo</i>
+                        </a>
+
+                    </li>
+                    <li class="treeview">
+                        <a href="Lichtrinh.html">
+                            <i class="fa fa-files-o"></i>
+                            <span>Xem lịch trình</span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="treeview">
+                        <a href="Xephang.html">
+                            <i class="fa fa-pie-chart"></i>
+                            <span>Bảng Xếp hạng</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+
+                            <a href="Danhgia.html">
+                            <i class="fa fa-laptop"></i>
+                            <span>Đánh giá</span>
+                            </a
+
+
+                    </li>
+
+
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- =============================================== -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="Assest/picture/cauthu.png" alt="...">
+                        <div class="caption">
+                          <h3>SaigonStarHai - 2 cầu thủ Hà Nội FC được mời xuất ngoại</h3>
+                          <p>Thể Thao 247 - Theo tiết lộ mới đây từ chính người trong cuộc, 2 cầu thủ Hà Nội đã được mời gọi xuất ngoại thi đấu trong thời gian qua.</p>
+                          <p><a href="#" class="btn btn-primary" role="button">Xem chi tiết</a> </p>
+                        </div>
+                      </div>
+                      <div class="thumbnail">
+                        <img src="Assest/picture/trongtai.jpg" alt="...">
+                        <div class="caption">
+                          <h3>SaigonStar -Cựu còi vàng Việt Nam: Thổi phạt đền HAGL, trọng tài có 2 cái sai</h3>
+                          <p>Theo cựu còi vàng Dương Mạnh Hùng, trọng tài Nguyễn Văn Kiên đã có những nhận định không chính xác về nhiều tình huống trong trận đấu.</p>
+                          <p><a href="#" class="btn btn-primary" role="button">Xem chi tiết</a> </p>
+                        </div>
+                      </div>
+                      <div class="thumbnail">
+                        <img src="Assest/picture/xephang.png" alt="...">
+                        <div class="caption">
+                          <h3>SaigonStar - Bảng xếp hạng vòng 7 V.League. Cập nhật thứ hạng của HAGL, Hà Nội FC... tại V.League 2018.</h3>
+                          <p>Thể Thao 247 - Bảng xếp hạng vòng 7 V.League. Cập nhật thứ hạng của HAGL, Hà Nội FC... tại V.League 2018.</p>
+                          <p><a href="#" class="btn btn-primary" role="button">Xem chi tiết</a> </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="Assest/picture/trandau1.jpg" alt="...">
+                        <div class="caption">
+                          <h3>SaigonStar - Trực tiếp XSKT Cần Thơ vs Than Quảng Ninh, 17h00 ngày 6/5</h3>
+                          <p>Thể Thao 247 trực tiếp trận đấu giữa XSKT Cần Thơ vs Than Quảng Ninh, diễn ra lúc 17h00 ngày 6/5 trong khuôn khổ V-League 2018.</p>
+                          <p><a href="#" class="btn btn-primary" role="button">Xem chi tiết</a> </p>
+                        </div>
+                      </div>
+                      <div class="thumbnail">
+                        <img src="Assest/picture/SHB.jpg" alt="...">
+                        <div class="caption">
+                          <h3>SaigonStar- Đức Chinh 'nổ súng' SHB Đà Nẵng thua bởi phút bù giờ nghiệt ngã</h3>
+                          <p>Thể Thao 247 - Đức Chinh 'nổ súng' tưởng chừng đã mang về 1 điểm cho SHB Đà Nẵng, thế nhưng phút bù giờ 90+5 họ phải nhận trái đắng và thất bại trước Hải Phòng</p>
+                          <p><a href="#" class="btn btn-primary" role="button">Xem chi tiết</a> </p>
+                        </div>
+                      </div>
+                      <div class="thumbnail">
+                        <img src="Assest/picture/congvinh.jpg" alt="...">
+                        <div class="caption">
+                          <h3>SaigonStar-Công Vinh chia tay TP. HCM: Bỏ mặc HLV Miura một mình "đón bão"?</h3>
+                          <p>HLV Toshiya Miura giờ chỉ còn một mình để oằn lưng trước những sức ép ở CLB TP.HCM sau khi Công Vinh đột ngột ra đi.</p>
+                          <p><a href="#" class="btn btn-primary" role="button">Xem chi tiết</a> </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.3.8
+            </div>
+            <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+            reserved.
+        </footer>
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+             <div class="tab-content">
+                <!-- Home tab content -->
+                <div class="tab-pane" id="control-sidebar-home-tab">
+                    <h3 class="control-sidebar-heading">Recent Activity</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+                                    <p>Will be 23 on April 24th</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="menu-icon fa fa-user bg-yellow"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+                                    <p>New phone +1(800)555-1234</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+                                    <p>nora@example.com</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="menu-icon fa fa-file-code-o bg-green"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+                                    <p>Execution time 5 seconds</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+                    <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <h4 class="control-sidebar-subheading">
+                                    Custom Template Design
+                                    <span class="label label-danger pull-right">70%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <h4 class="control-sidebar-subheading">
+                                    Update Resume
+                                    <span class="label label-success pull-right">95%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <h4 class="control-sidebar-subheading">
+                                    Laravel Integration
+                                    <span class="label label-warning pull-right">50%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <h4 class="control-sidebar-subheading">
+                                    Back End Framework
+                                    <span class="label label-primary pull-right">68%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+                </div>
+                <!-- /.tab-pane -->
+                <!-- Stats tab content -->
+                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+                <!-- /.tab-pane -->
+                <!-- Settings tab content -->
+                <div class="tab-pane" id="control-sidebar-settings-tab">
+                    <form method="post">
+                        <h3 class="control-sidebar-heading">General Settings</h3>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Report panel usage
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
+                            <p>
+                                Some information about this general settings option
+                            </p>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Allow mail redirect
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
+                            <p>
+                                Other sets of options are available
+                            </p>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Expose author name in posts
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
+                            <p>
+                                Allow the user to show his name in blog posts
+                            </p>
+                        </div>
+                        <!-- /.form-group -->
+                        <h3 class="control-sidebar-heading">Chat Settings</h3>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Show me as online
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Turn off notifications
+                                <input type="checkbox" class="pull-right">
+                            </label>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Delete chat history
+                                <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                            </label>
+                        </div>
+                        <!-- /.form-group -->
+                    </form>
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <script src="Assest/jquery-3.3.1.min.js"></script>
+    <script src="Assest/bootstrap.min.js"></script>
+
+</body>
+</html>

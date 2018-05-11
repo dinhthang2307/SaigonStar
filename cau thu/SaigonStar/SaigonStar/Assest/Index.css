@@ -1,0 +1,11 @@
+.nav{
+    background-color: black;
+    font-family: 'Courier New', 'Courier', 'monospace';
+    height: 50px;
+    font-size: 40px;
+    background-image: url("Assest/picture/player.jpg");
+}
+.pull-left info{
+    margin-bottom: 5px;
+    border-bottom: 5px;
+}
